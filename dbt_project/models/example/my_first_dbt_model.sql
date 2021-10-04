@@ -21,7 +21,11 @@ with source_data as (
     union all
     select 5 as id
     union all
+<<<<<<< HEAD
     select 7 as id
+=======
+    select 6 as id
+>>>>>>> a31a9d7215f305687ff14dd0dc967ad23a6b4e9f
 )
 
 select *
