@@ -20,6 +20,7 @@ with source_data as (
     select 4 as id
     union all
     select 15 as id
+	union all
     select 6 as id
     union all
     select 7 as id
