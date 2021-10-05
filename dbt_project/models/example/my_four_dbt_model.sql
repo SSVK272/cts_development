@@ -21,7 +21,9 @@ with source_data as (
     union all
     select 15 as id
 	union all
-	select 15 as id
+	select 17 as id
+	union all
+	select 16 as id
 	union all
     select 6 as id
     union all
