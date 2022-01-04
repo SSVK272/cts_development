@@ -25,6 +25,8 @@ with source_data as (
     select 8 as id
     union all
     select 9 as id
+    union all
+    select 10 as id
 	
 )
 
