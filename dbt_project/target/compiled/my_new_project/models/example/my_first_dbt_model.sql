@@ -1,4 +1,3 @@
-
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -7,7 +6,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+
 
 with source_data as (
 
@@ -26,8 +25,6 @@ with source_data as (
     select 8 as id
     union all
     select 9 as id
-    union all
-    select 10 as id
 	
 )
 
