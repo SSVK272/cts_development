@@ -24,16 +24,6 @@ with source_data as (
     select 7 as id
     union all
     select 8 as id
-    union all
-    select 9 as id
-    union all
-    select 10 as id
-    union all
-    select 11 as id
-    union all
-    select 12 as id
-    union all
-    select 13 as id
 	
 )
 
