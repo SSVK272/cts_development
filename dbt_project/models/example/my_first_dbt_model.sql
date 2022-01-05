@@ -7,6 +7,8 @@
     Try changing "table" to "view" below
 */
 
+
+
 {{ config(materialized='table',schema='dbt_ssvk')}}
 
 with source_data as (
@@ -23,7 +25,7 @@ with source_data as (
     union all
     select 7 as id
     union all
-    select 8 as id
+    select 9 as id
 	
 )
 
