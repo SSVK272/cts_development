@@ -7,7 +7,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table',schema='DBT_SSVK')}}
+{{ config(materialized='table',schema='dbt_ssvk')}}
 
 with source_data as (
 
