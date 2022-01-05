@@ -7,7 +7,7 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table',schema='DBT_SSVK')}}
+{{ config(materialized='table',schema='dbt_ssvk')}}
 
 with source_data as (
 
@@ -33,7 +33,7 @@ with source_data as (
     union all
     select 12 as id
     union all
-    select 15 as id
+    select 13 as id
 	
 )
 
