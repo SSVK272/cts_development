@@ -9,28 +9,14 @@
 
 
 
-{{ config(materialized='table',schema='dbt_ssvk')}}
+{{ config(materialized='table',schema='dbt_ssvk') }}
 
-with source_data as (
-
+with source_data(id) as (
     select 1 as id
     union all
     select 2 as id
-    union all
-    select 3 as id
-    union all
-    select 4 as id
-    union all
-    select 6 as id
-    union all
-    select 8 as id
-    union all
-    select 9 as id
-	
 )
-
-select *
-from source_data
+select d.id from source_data d
 
 /*
     Uncomment the line below to remove records with null `id` values

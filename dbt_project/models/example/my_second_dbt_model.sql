@@ -1,6 +1,11 @@
 
 -- Use the `ref` function to select from other models
 
-{{ config(materialized='table',schema='dbt_ssvk')}}
+{{ config(materialized='table',schema='dbt_ssvk') }}
 
-select * from {{ ref('my_first_dbt_model') }}
+with source_data_0(id) as (
+    select 1 as id
+    union all
+    select 2 as id
+)
+select d.id from source_data_0 d
